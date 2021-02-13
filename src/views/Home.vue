@@ -29,6 +29,7 @@
 
 export default {
   name: 'Home',
+  title: "Home - jarunik.com",
   data: function() {
     return {
       version: process.env.VUE_APP_VERSION

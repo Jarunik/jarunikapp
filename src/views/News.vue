@@ -47,6 +47,7 @@
 <script>
 export default {
   name: 'News',
+  title: "News - jarunik.com",
   props: {
     msg: String
   },

@@ -23,6 +23,7 @@
 <script>
 export default {
   name: 'Delegates',
+  title: "Delegates - jarunik.com",
   props: {
     msg: String
   },
