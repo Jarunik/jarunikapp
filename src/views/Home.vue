@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <h1>Welcome to jarunik.com</h1>
     <p>
-      Iterative development. Please don't expect much in version 0.0.2
+      Iterative development. Please don't expect much in version {{version}}
     </p>
     <h3>Essential Links</h3>
     <ul>
@@ -26,8 +26,14 @@
 </template>
 
 <script>
+
 export default {
   name: 'Home',
+  data: function() {
+    return {
+      version: process.env.VUE_APP_VERSION
+    }
+  }
 }
 </script>
 
