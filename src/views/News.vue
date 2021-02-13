@@ -9,27 +9,21 @@
       Raw uncensored blockhain data. Use it at your onw risk. Sole responsibility lies with the author.
     </p>
     <table id="news">
-      <thead>
-        <tr>
-          <th>News</th>
-          <th>Date</th>
-          <th>Author</th>
-        </tr>
-      </thead>
       <tbody>
         <tr v-for="post in news.data" :key="post.id">
-          <td v-linkified>{{post.vendorField}}</td>
-          <td><a
-              :href="'https://explorer.ark.io/transaction/' + post.id"
+          <td v-linkified>
+              {{post.vendorField}}
+          <br><small>Posted on 
+          <a :href="'https://explorer.ark.io/transaction/' + post.id"
               target="_blank"
               rel="noopener"
-            >{{shorten(post.timestamp.human)}}</a></td>
-          <td>
+            >{{shorten(post.timestamp.human)}}</a> by 
             <a
               :href="'https://explorer.ark.io/wallets/' + post.sender"
               target="_blank"
               rel="noopener"
             >{{truncate(post.sender)}}</a>
+            </small>
           </td>
         </tr>
       </tbody>
@@ -98,4 +92,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+table {
+    border-collapse: collapse;
+}
+table td {
+  border: 1px solid lightgrey;
+  padding: 4px;
+}
+small {
+  font-size: xx-small;
+  color: lightgrey;
+}
+small a {
+  font-size: xx-small;
+  color: lightgrey;
+}
 </style>
