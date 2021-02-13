@@ -2,13 +2,15 @@
   <div class="news">
     <h1>Ark Blockchain News</h1>
      <p>
-      To post: Send a transaction with a minimal amount and text in the Smartbridge field to the following address: <br/>
-      <a href="https://explorer.ark.io/wallets/AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR">AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR</a>
-    </p>
-    <p>
-      Raw uncensored blockhain data. Use it at your onw risk. Sole responsibility lies with the author.
+      You can post with an Ark transaction. Use a small amount and put text into the Smartbridge field. <br/>
+      Recipient address: <a href="https://explorer.ark.io/wallets/AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR">AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR</a>
+    <br>
+      <i>Raw uncensored blockhain data. Use it at your onw risk. Sole responsibility lies with the author.</i>
     </p>
     <table id="news">
+      <thead>
+          <tr><td><b>Feed</b></td></tr>
+      </thead>
       <tbody>
         <tr v-for="post in news.data" :key="post.id">
           <td v-linkified>
