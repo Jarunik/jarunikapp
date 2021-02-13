@@ -6,7 +6,7 @@
       <a href="https://explorer.ark.io/wallets/AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR">AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR</a>
     </p>
     <p>
-      Raw uncensored blockhain data. Use at your own risk!
+      Raw uncensored blockhain data. Use it at your onw risk. Sole responsibility lies with the author.
     </p>
     <table id="news">
       <thead>

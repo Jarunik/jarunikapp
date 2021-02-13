@@ -1,6 +1,6 @@
 <template>
   <div class="delegates">
-    <h1>Delegates</h1>
+    <h1>Ark Delegates</h1>
     <table id="delegates">
       <thead>
         <tr>
