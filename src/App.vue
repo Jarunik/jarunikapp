@@ -2,6 +2,7 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/news">News</router-link> |
+    <router-link to="/delegates">Delegates</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
@@ -42,5 +43,8 @@ li {
 }
 a {
   color: #0bbd27;
+}
+table {
+  margin: 0px auto;
 }
 </style>
