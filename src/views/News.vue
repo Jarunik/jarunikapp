@@ -7,6 +7,11 @@
     <br>
       <i>Raw uncensored blockhain data. Use it at your onw risk. Sole responsibility lies with the author.</i>
     </p>
+    <p>
+      <button onclick="window.location.href='ark:AZHXnQAYajd3XkxwwiL6jnLjtDHjtAATtR?amount=0.00000001&vendorField=I love Ark!';">
+      Post a message here!
+    </button>
+    </p>
     <table id="news">
       <thead>
           <tr><td><b>Feed</b></td></tr>
