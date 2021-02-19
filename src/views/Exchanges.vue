@@ -7,20 +7,33 @@
     <table id="contributions">
       <thead>
         <tr>
-          <th>Incoming</th>
-        <th>Date</th>
+          <th>Date</th>
+                    <th>Incoming</th>
           <th>Outgoing</th>
+          <th>Size Indicator</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="transaction in transactions.data" :key="transaction.id">
-          <td><font color=red><span v-if="transaction.sender == 'AFrPtEmzu6wdVpa2CnRDEKGQQMWgq8nE9V'">-</span><span v-else>{{Number (Math.round(transaction.amount / 100000000) ).toLocaleString('en')}}</span></font></td>
-          <td><a
+                      <td><a
               :href="'https://explorer.ark.io/transaction/' + transaction.id"
               target="_blank"
               rel="noopener"
             >{{transaction.timestamp.human.substring(11,16)}}</a></td>
+          <td><font color=red><span v-if="transaction.sender == 'AFrPtEmzu6wdVpa2CnRDEKGQQMWgq8nE9V'">-</span><span v-else>{{Number (Math.round(transaction.amount / 100000000) ).toLocaleString('en')}}</span></font></td>
           <td><font color="#0bbd27"><span v-if="transaction.sender == 'AFrPtEmzu6wdVpa2CnRDEKGQQMWgq8nE9V'">{{Number (Math.round(transaction.amount / 100000000) ).toLocaleString('en')}}</span><span v-else>-</span></font></td>
+          <td>
+            <div v-if="transaction.sender !== 'AFrPtEmzu6wdVpa2CnRDEKGQQMWgq8nE9V'">
+              <div id="transaction-size-red">
+                <div :style="{width: Math.round(transaction.amount / 100000000) / 500 + '%'}"></div>
+              </div>
+            </div>
+            <div v-else>
+              <div id="transaction-size-green">
+                <div :style="{width: Math.round(transaction.amount / 100000000) / 500 + '%'}"></div>
+              </div>
+           </div>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -63,5 +76,23 @@ export default {
 <style scoped>
 a {
   color:black;
+}
+
+#transaction-size-red {
+  width: 180px;
+  border: 2px solid white;
+}
+#transaction-size-red  div {
+  height: 10px;
+  background: red;
+}
+
+#transaction-size-green {
+  width: 180px;
+  border: 2px solid white;
+}
+#transaction-size-green  div {
+  height: 10px;
+  background: green;
 }
 </style>
