@@ -48,4 +48,8 @@ a {
 table {
   margin: 0px auto;
 }
+.pointer {
+  cursor: pointer;
+  text-decoration: underline;
+}
 </style>
