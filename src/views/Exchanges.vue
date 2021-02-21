@@ -119,6 +119,7 @@
 <script>
 export default {
   name: "Exchanges",
+  title: "Exchanges - jarunik.com",
   props: {
     msg: String,
   },
