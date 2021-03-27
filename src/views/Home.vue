@@ -16,7 +16,6 @@
       <li><a href="https://deployer.io" target="_blank" rel="noopener">deployer.io</a></li>
       <li><a href="https://nodem.io" target="_blank" rel="noopener">nodem.io</a></li>
       <li><a href="https://protokol.com" target="_blank" rel="noopener">protokol.com</a></li>
-      <li><a href="https://discord.ark.io/" target="_blank" rel="noopener">Ark Discord</a></li>
     </ul>
     <h3>Interactive</h3>
     <ul>

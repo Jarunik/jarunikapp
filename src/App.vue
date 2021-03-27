@@ -4,6 +4,7 @@
     <router-link to="/news">News</router-link> |
     <router-link to="/delegates">Delegates</router-link> |
     <router-link to="/exchanges">Exchanges</router-link> |
+    <router-link to="/staking">Staking</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
